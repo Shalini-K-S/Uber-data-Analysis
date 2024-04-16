@@ -17,7 +17,11 @@ UberDataset: The primary dataset used for this analysis is the "UberDataset.csv"
 Microsoft Excel
 ## Procedure
 - Data loading and inspection.
-- Handling missing values.
+- START_DATE,END_DATE is formatted and split to two columns with date and time seperately using text to column function.
+- From the Start and End time the time difference is calculated in hours.
+- Start values mispelled is corrected like karachi spelled as kar?chi
+- Miles travelled above 300 km is removed as it is not possible to travel such longest distance in the time mentioned.
+- Speed travelled is calculated by dividing distance travelled by time
 - Data cleaning and formatting.
 - Creation of Pivot Table
 - Exploratory Data Analysis
